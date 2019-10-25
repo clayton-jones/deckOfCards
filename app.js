@@ -5,8 +5,8 @@ let deck = [];
 // Create initial deck of careds
 populateDeck = (type, suit) => {
     let card = {
-        name: ,
-        suit: 
+        name: '',
+        suit: ''
     };
 
     for (let i = 0; i < type.length(); i++) {
