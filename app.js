@@ -1,8 +1,12 @@
 'use strict'
 
-let cardType = ['A', 'K', 'Q', 'J', 10, 9, 8, 7, 6, 5, 4, 3, 2];
-let cardSuit = ['Diamond', 'Hearts', 'Clubs', 'Spades'];
+let cardType = ['Ace', 'King', 'Queen', 'Jack', 10, 9, 8, 7, 6, 5, 4, 3, 2];
+let cardSuit = ['Diamonds', 'Hearts', 'Clubs', 'Spades'];
 let deck = [];
+
+function shuffle () {
+    
+}
 
 // Create initial deck of careds
 function populateDeck(type, suit) {
@@ -25,10 +29,16 @@ function populateDeck(type, suit) {
         }
     }
 }
-
+// Called populateDeck function to create initial deck of cards
 populateDeck(cardType, cardSuit);
+
 let newCard;
 function draw() {
-    newCard = deck.shift();
-    return newCard;
+    if (deck.length === 0) {
+        document.getElementById('cardDisplay').innerHTML = 'You are out of cards. Please shuffle.'
+    } else {
+        newCard = deck.shift();
+        document.getElementById('cardDisplay').innerHTML = 'You drew a ' + newCard.name + ' of ' + newCard.suit + '.';
+        return newCard;
+    }
 }

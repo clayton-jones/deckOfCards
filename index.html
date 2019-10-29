@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type ="text/css" href="./style.css">
-    <script src="./app.js"></script>
-    <title>Deck of Cards</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type ="text/css" href="./style.css">
+        <title>Deck of Cards</title>
+    </head>
 
-<body>
-    <header>
-        <div>
-            <h1>Deck of Cards</h1>
+    <body>
+        <header>
+            <div>
+                <h1>Deck of Cards</h1>
+            </div>
+        </header>
+        
+
+        <div class ="buttons">
+            <button onclick="draw()">Draw</button><br>
+            <button onclick="shuffle()">Shuffle</button>
         </div>
-    </header>
-    
+        <div>
+            <p id="cardDisplay"></p>
+        </div>
 
-    <div class ="buttons">
-        <button onclick="draw()">Draw</button><br>
-        <button onclick="shuffle()">Shuffle</button>
-    </div>
-
-</body>
+        <script src="./app.js"></script>
+    </body>
 </html>
