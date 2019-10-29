@@ -27,3 +27,8 @@ function populateDeck(type, suit) {
 }
 
 populateDeck(cardType, cardSuit);
+let newCard;
+function draw() {
+    newCard = deck.shift();
+    return newCard;
+}
