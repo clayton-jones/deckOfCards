@@ -5,7 +5,7 @@ let cardSuit = ['Diamonds', 'Hearts', 'Clubs', 'Spades'];
 let deck = [];
 
 function shuffle () {
-    
+
 }
 
 // Create initial deck of careds
