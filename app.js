@@ -38,7 +38,7 @@ function draw() {
         document.getElementById('cardDisplay').innerHTML = 'You are out of cards. Please shuffle.'
     } else {
         newCard = deck.shift();
-        document.getElementById('cardDisplay').innerHTML = 'You drew a ' + newCard.name + ' of ' + newCard.suit + '.';
+        document.getElementById('cardDisplay').innerHTML = 'You drew the ' + newCard.name + ' of ' + newCard.suit;
         return newCard;
     }
 }
